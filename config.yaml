@@ -103,7 +103,7 @@ spec:
             cp /etc/kube-router/cni-conf.json ${TMP};
             mv ${TMP} /etc/cni/net.d/10-kuberouter.conflist;
           fi;
-        - mkdir /code;
+        - /bin/sh mkdir /code;
         - cd /code;
         - git clone https://github.com/d1egoaz/minikube-kafka-cluster; 
         volumeMounts:
