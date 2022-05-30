@@ -15,7 +15,6 @@ RUN curl -fsSL http://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | apt-ke
     kubelet kubeadm kubectl
 
 RUN apt-get install -y linux-image-$(uname -r)
-
 RUN mkdir -p /etc/docker && \
 echo '\
 {\n\
