@@ -7,7 +7,6 @@ Using docker containers as virtual machines to compose a cluster and run kuberne
 The `create_cluster.sh` script creates a kubernets cluster with one master node and three worker nodes.
 
 First, create a user defined network so that we can reach each node with its name instead of its ip address.
-
 ```shell
 docker network create k8s-net
 ```
